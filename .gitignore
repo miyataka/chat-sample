@@ -31,3 +31,6 @@
 /config/master.key
 
 /vendor/bundle
+
+# redis local file
+dump.rdb
