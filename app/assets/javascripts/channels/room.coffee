@@ -7,7 +7,6 @@ App.room = App.cable.subscriptions.create { channel: "RoomChannel", room_id: 1 }
 
   received: (data) ->
     $('#messages').append data['message']
-    #alert(data)
     # Called when there's incoming data on the websocket for this channel
 
   speak: (message) ->

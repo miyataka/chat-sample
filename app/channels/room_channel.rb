@@ -10,10 +10,6 @@ class RoomChannel < ApplicationCable::Channel
 
   def speak(data)
     room = Room.find(params[:room_id])
-    p room
-    p data['message']
     room.messages.create!(content: data['message'])
-    #m.update!(content: data['message'])
-    #Message.create! content: data['message']
   end
 end
