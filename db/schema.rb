@@ -16,8 +16,8 @@ ActiveRecord::Schema.define(version: 2018_12_10_013256) do
     t.text "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "rooms_id"
-    t.index ["rooms_id"], name: "index_messages_on_rooms_id"
+    t.integer "room_id"
+    t.index ["room_id"], name: "index_messages_on_rooms_id"
   end
 
   create_table "rooms", force: :cascade do |t|
